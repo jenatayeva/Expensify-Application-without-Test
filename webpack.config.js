@@ -6,7 +6,8 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [{
@@ -15,7 +16,7 @@ module.exports = {
       exclude: /node_modules/
     },
     {
-      test: /\.scss$/,
+      test: /\.s?css$/,
       use: [
         'style-loader',
         'css-loader',
@@ -26,8 +27,10 @@ module.exports = {
   devtool: 'eval-cheap-module-source-map',
   devServer: {
     static: {
-      directory: path.join(__dirname, "./")
+      directory: path.join(__dirname, "public"),
     },
     compress: true,
+    port: 8082, // default 8000
+    historyApiFallback: true,
   }
 }

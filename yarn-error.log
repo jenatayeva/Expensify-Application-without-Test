@@ -3114,7 +3114,7 @@ Lockfile:
       apache-crypt "^1.1.2"
       apache-md5 "^1.0.6"
       bcryptjs "^2.3.0"
-      uuid "^3.0.0"
+      uuidv4 "^3.0.0"
   
   http-cache-semantics@^4.1.0:
     version "4.1.0"
@@ -5237,7 +5237,7 @@ Lockfile:
       safe-buffer "^5.1.2"
       tough-cookie "~2.5.0"
       tunnel-agent "^0.6.0"
-      uuid "^3.3.2"
+      uuidv4 "^3.3.2"
   
   require-directory@^2.1.1:
     version "2.1.1"
@@ -5572,7 +5572,7 @@ Lockfile:
     integrity sha512-GJgLTZ7vYb/JtPSSZ10hsOYIvEYsjbNU+zPdIHcUaWVNUEPivzxku31865sSSud0Da0W4lEeOPlmw93zLQchuQ==
     dependencies:
       faye-websocket "^0.11.3"
-      uuid "^8.3.2"
+      uuidv4 "^8.3.2"
       websocket-driver "^0.7.4"
   
   socks-proxy-agent@^6.0.0:
@@ -6142,14 +6142,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
     integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
   
-  uuid@^3.0.0, uuid@^3.3.2:
+  uuidv4@^3.0.0, uuidv4@^3.3.2:
     version "3.4.0"
-    resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
+    resolved "https://registry.yarnpkg.com/uuidv4/-/uuidv4-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
     integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
   
-  uuid@^8.3.2:
+  uuidv4@^8.3.2:
     version "8.3.2"
-    resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+    resolved "https://registry.yarnpkg.com/uuidv4/-/uuidv4-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
     integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
   
   v8flags@^2.0.10:

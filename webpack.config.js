@@ -30,7 +30,7 @@ module.exports = {
       directory: path.join(__dirname, "public"),
     },
     compress: true,
-    port: 8082, // default 8000
+    // port: 8000
     historyApiFallback: true,
   }
 }

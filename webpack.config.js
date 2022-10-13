@@ -55,5 +55,8 @@ module.exports = (env) => {
     stats: {
       errorStack: true,
     },
+    performance: {
+      hints: false
+    }
   };
 };

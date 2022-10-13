@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js remove postcss
+  /usr/local/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add numeral@2.0.6
 
 PATH: 
   /usr/local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/uuidv4/-/uuidv4-3.4.0.tgz: Request failed "404 Not Found"
+  Error: https://registry.yarnpkg.com/uuidv4/-/uuidv4-3.1.0.tgz: Request failed "404 Not Found"
       at ResponseError.ExtendableBuiltin (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:696:66)
       at new ResponseError (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:802:124)
       at Request.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:66215:16)

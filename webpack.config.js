@@ -1,36 +1,59 @@
-const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
+module.exports = (env) => {
+  const isProduction = env === 'production';
 
-module.exports = {
-  mode: 'development',
-  entry: './src/app.js',
-  output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js',
-    publicPath: '/'
-  },
-  module: {
-    rules: [{
-      loader: 'babel-loader',
-      test: /\.js$/,
-      exclude: /node_modules/
+  return {
+    mode: 'production',
+    entry: './src/app.js',
+    output: {
+      path: path.join(__dirname, 'public'),
+      filename: 'bundle.js'
     },
-    {
-      test: /\.s?css$/,
-      use: [
-        'style-loader',
-        'css-loader',
-        'sass-loader'
-      ]
-    }]
-  },
-  devtool: 'eval-cheap-module-source-map',
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "public"),
+    module: {
+      rules: [{
+        loader: 'babel-loader',
+        test: /\.js$/,
+        exclude: /node_modules/
+      }, {
+        test: /\.s?css$/,
+          use: [
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                // hmr: process.env.NODE_ENV === "development"
+              }
+            },
+            {
+             loader: "css-loader",
+              options: {
+                sourceMap: true,
+              }
+            },
+            {
+              loader: "sass-loader",
+               options: {
+                 sourceMap: true,
+               }
+             }
+          ]
+    
+      }]
     },
-    compress: true,
-    // port: 8000
-    historyApiFallback: true,
-  }
-}
+    plugins: [
+      new MiniCssExtractPlugin({
+        filename: '[name].css'
+      })
+    ],
+    devtool: isProduction ? 'source-map' : 'inline-source-map',
+    devServer: {
+      static: path.join(__dirname, 'public'),
+      historyApiFallback: true,
+      hot: true
+    },
+    stats: {
+      errorStack: true,
+    },
+  };
+};

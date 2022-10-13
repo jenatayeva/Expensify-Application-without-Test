@@ -10,8 +10,16 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 
-const store = configureStore();
 
+// import(
+//   /* webpackChunkName: "app" */
+//   'app.jsx'
+// ).then((App) => {
+//   ReactDOM.render(<App />, root);
+// });
+
+const store = configureStore();
+console.log('test');
 
 const state = store.getState();
 

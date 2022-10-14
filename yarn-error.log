@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add numeral@2.0.6
+  /usr/local/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add webpack@3.1.0
 
 PATH: 
   /usr/local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/uuidv4/-/uuidv4-3.1.0.tgz: Request failed "404 Not Found"
+  Error: https://registry.yarnpkg.com/uuidv4/-/uuidv4-3.4.0.tgz: Request failed "404 Not Found"
       at ResponseError.ExtendableBuiltin (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:696:66)
       at new ResponseError (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:802:124)
       at Request.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:66215:16)
@@ -43,14 +43,15 @@ npm manifest:
       "babel-preset-react": "^6.24.1",
       "browserslist": "^4.21.4",
       "css-loader": "0.28.4",
-      "enzyme-adapter-react-16": "1.0.0",
       "enzyme-to-json": "3.0.1",
       "jest": "20.0.4",
+      "jest-cli": "^29.1.2",
       "jest-enzyme": "^7.1.2",
       "live-server": "^1.2.2",
       "moment": "^2.18.1",
       "node-sass": "^7.0.3",
       "normalize.css": "8.0.1",
+      "numeral": "^2.0.6",
       "raf": "3.3.2",
       "react": "16.0.0",
       "react-addons-shallow-compare": "15.6.0",
@@ -66,7 +67,6 @@ npm manifest:
       "uuid": "^9.0.0",
       "uuidv4": "3.1.0",
       "validator": "8.0.0",
-      "webpack": "^5.74.0",
       "webpack-dev-server": "^4.11.1"
     },
     "devDependencies": {
@@ -74,6 +74,7 @@ npm manifest:
       "autoprefixer": "^10.4.12",
       "cssnano": "^5.1.13",
       "enzyme": "^2.9.1",
+      "enzyme-adapter-react-16": "^1.0.0",
       "enzyme-adapter-react-16.1": "^1.6.4",
       "mini-css-extract-plugin": "^2.6.1",
       "postcss-loader": "^7.0.1",
